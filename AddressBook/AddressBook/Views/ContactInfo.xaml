@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AddressBook.Pages.ContactInfo">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="{Binding ToolBarText}" Command="{Binding EditSaveContactCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="IsEnabled" Value="{Binding IsEnabled}" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+        <Entry Text="{Binding FirstName}" Placeholder="First Name" Keyboard="Text" />
+        <Entry Text="{Binding SecondName}" Placeholder="Second Name" Keyboard="Text" />
+        <Entry Text="{Binding PhoneNumber}" Placeholder="Phone Number" Keyboard="Telephone" />
+        <Entry Text="{Binding AdditionalPhoneNumber}" Placeholder="Work Phone Number" Keyboard="Telephone" />
+        <Entry Text="{Binding City}" Placeholder="City" Keyboard="Text" />
+        <Label Text="{Binding ErrorLabel}" TextColor="Red" Font="Large" HorizontalOptions="Center" />
+    </StackLayout>
+
+</ContentPage>

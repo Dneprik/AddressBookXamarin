@@ -1,0 +1,23 @@
+﻿<!--<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AddressBook.Pages.AddNewContact"
+             Title="New contact">
+  <ContentPage.ToolbarItems>
+    <ToolbarItem x:Name="SaveContact" Text="Save" Command="{Binding SaveNewContactCommand}" 
+                 CommandParameter="{Binding Source={x:Reference FirstNameEntry}, Path=Text}"/>
+
+  </ContentPage.ToolbarItems>
+  <StackLayout Padding="10">
+    <Entry Text="{Binding FirstName}" Placeholder="FirstName" Keyboard="Text"></Entry>
+    <Entry Text="{Binding SecondName}" Placeholder="SecondName" Keyboard="Text"></Entry>
+    <Entry Text="{Binding PhoneNumber}" Placeholder="Phone Number" Keyboard="Telephone"></Entry>
+    <Entry Text="{Binding AdditionalPhoneNumber}" Placeholder="Work Phone Number" Keyboard="Telephone"></Entry>
+    <Entry Text="{Binding City}" Placeholder="City" Keyboard="Text"></Entry>
+    <Label Text="{Binding ErrorLabel}" TextColor="Red" Font="Large" HorizontalOptions="Center"/>
+
+
+  </StackLayout>
+  
+</ContentPage>-->
+
